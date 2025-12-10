@@ -26,21 +26,31 @@ A Flutter application that fetches product images from an API, displays them in 
 
 ##🔍 1. Overview
 
-The Product Image Viewer App is a simple Flutter application built to demonstrate API integration, UI rendering, state management using BLoC, local persistence, dark/light theme switching, profile drawer integration, and clean architecture.
+The Product Image Viewer App is a simple Flutter application built to demonstrate API integration, UI rendering, state management using BLoC, local persistence, 
+dark/light theme switching, profile drawer integration, and clean architecture.
 
 #This project fulfills the assignment requirement:
 
 .Fetch product images from moc APIs
+
 .Display in a grid
+
 .Navigate to product detail screen
+
 .Toggle favorites
+
 .Persist favorites locally
+
 .Include bottom navigation
+
 .Add a profile/drawer section
+
 .Add theme switch (Dark/Light mode)
+
 .Maintain clean BLoC architecture
 
 ##🚀 2. Features
+
 #🖼️ Product Grid
 
 Fetches product list from API or fallback JSON
@@ -94,6 +104,7 @@ Theme preference is saved persistently
 .Logout button
 
 ##🖼️ 3. Screens Overview
+
 .Home Screen
 
 .Grid of all products
@@ -125,8 +136,11 @@ Theme preference is saved persistently
 .The project follows Clean Architecture principles:
 
 .presentation/ → UI Layer (Screens, Widgets)
+
 .logic/        → State Management (BLoC)
+
 .data/         → Repository, Services, Model
+
 .utils/        → Constants, Helpers
 
 
@@ -139,12 +153,17 @@ Theme preference is saved persistently
 .Theme switching
 
 Ensures:
+
 .separation of concerns
+
 .clean UI
+
 .reusability
+
 .maintainability
 
 ##📂 5. Folder Structure
+
 lib/
 │
 ├── data/
@@ -189,6 +208,7 @@ lib/
     
 
 ##⚙️ 6. State Management (BLoC)
+
 ProductBloc
 
 Loads products from API
@@ -217,17 +237,29 @@ GET https://mock.pavepilot.dev/products
 Sample Response:
 
 [
+
   {
+  
     "id": "1",
+    
     "title": "Running Shoes",
+    
     "imageUrl": "https://picsum.photos/400?1"
+    
   },
+  
   {
+  
     "id": "2",
+    
     "title": "Leather Wallet",
+    
     "imageUrl": "https://picsum.photos/400?2"
+    
   }
+  
 ]
+
 
 
 ✔If the API fails, the app loads a local JSON fallback.
@@ -251,10 +283,13 @@ git clone https://github.com/yourusername/product_image_viewer_app.git
 cd product_image_viewer_app
 
 #2️⃣ Install dependencies
+
 flutter pub get
 
 #3️⃣ Run the app
+
 flutter run
 
 4️⃣ To run on Web with HTML renderer:
+
 flutter run -d chrome --web-renderer html
